@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "server/server.js",
   "scripts": {
-    "start": "node .",
+    "start": "node server/server.js",
     "pretest": "jshint .",
     "posttest": "nsp check"
   },
@@ -22,8 +22,9 @@
     "nsp": "^2.1.0"
   },
   "repository": {
-    "type": "",
-    "url": ""
+    "type": "git",
+    "url": "git://github.com/777CC/Lekded/"
   },
+  "license": "ISC",
   "description": "Lekded"
 }
