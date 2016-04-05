@@ -1,2 +1,5 @@
 loggingEnabled: true
-devErrorsEnabled: true
+debuggingEnabled: false
+devErrorsEnabled: false
+node_env: production
+logDirectory: iisnode
