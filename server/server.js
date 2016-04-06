@@ -17,6 +17,14 @@ app.start = function() {
   });
 };
 
+test = function() {
+setTimeout(function() {
+    
+  
+
+
+
+  console.log(__dirname);
 // Bootstrap the application, configure models, datasources and middleware.
 // Sub-apps like REST API are mounted via boot scripts.
 boot(app, __dirname, function(err) {
@@ -32,3 +40,7 @@ boot(app, __dirname, function(err) {
     }
   }, 10000);
 });
+}, 10000);  
+};
+
+test();
