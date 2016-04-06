@@ -24,10 +24,11 @@ setTimeout(function() {
 
 
 
-  console.log(__dirname);
+  
 // Bootstrap the application, configure models, datasources and middleware.
 // Sub-apps like REST API are mounted via boot scripts.
 boot(app, __dirname, function(err) {
+  console.log(__dirname);
   console.log('Welcome to My Console,');
   setTimeout(function() {
     console.log('Begin');
@@ -44,3 +45,24 @@ boot(app, __dirname, function(err) {
 };
 
 test();
+
+
+//Lets require/import the HTTP module
+var http = require('http');
+
+//Lets define a port we want to listen to
+const PORT=6000; 
+
+//We need a function which handles requests and send response
+function handleRequest(request, response){
+    response.end('It Works!! Path Hit: ' + request.url);
+}
+
+//Create a server
+var server = http.createServer(handleRequest);
+
+//Lets start our server
+server.listen(PORT, function(){
+    //Callback triggered when server is successfully listening. Hurray!
+    console.log("Server listening on: http://localhost:%s", PORT);
+});
