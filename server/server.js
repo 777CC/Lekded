@@ -40,6 +40,11 @@ boot(app, __dirname, function(err) {
     {
       console.log('Start');
       app.start();
+
+    }
+    else
+    {
+      app.start();      
     }
 
    
