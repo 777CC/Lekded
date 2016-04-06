@@ -32,6 +32,8 @@ boot(app, __dirname, function(err) {
   console.log('Welcome to My Console,');
   setTimeout(function() {
     console.log('Begin');
+     console.log(require.main);
+     console.log(module);
     if (err) {throw err;console.log(err);}
     // start the server if `$ node server.js`
     if (require.main === module)
@@ -39,6 +41,8 @@ boot(app, __dirname, function(err) {
       console.log('Start');
       app.start();
     }
+
+   
   }, 10000);
 });
 }, 10000);  
