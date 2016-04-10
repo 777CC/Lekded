@@ -35,5 +35,11 @@
   "user": {
     "dataSource": "db",
     "public": true
+  },
+  "lotto": {
+    "dataSource": "test",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }

@@ -2,5 +2,14 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "test": {
+    "host": "ds056288.mlab.com",
+    "port": 56288,
+    "url": "mongodb://test:test@ds056288.mlab.com:56288/777CC",
+    "database": "777CC",
+    "password": "test",
+    "user": "test",
+    "connector": "mongodb"
   }
 }
